@@ -1,0 +1,40 @@
+/* ----------------- /
+/ ----- reset ----- /
+/ ----------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+picture,
+svg,
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  width: 100vw;
+}

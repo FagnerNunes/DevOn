@@ -1,0 +1,87 @@
+.containerLogin {
+    place-items: center;
+    background-image: url(../images/bg-body-sign.svg);
+    background-position: center;
+    background-size: 80%;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+
+    .forms {
+        border-radius: 1rem;
+        box-shadow: 0 0 .8rem rgba(0, 0, 0, .2);
+        display: grid;
+        grid-template-columns: 55% 45%;
+        height: 80%;
+        place-items: center;
+        width: 85%;
+    
+        .image-container {
+            background-image: url(../images/bg-sign-in.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 1rem 0 0 1rem;
+            height: 100%;
+            width: 100%;
+        }
+
+        .container-form {
+            align-items: center;
+            background-image: url(../images/bg-animated.svg);
+            background-repeat: repeat-y;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            height: 100%;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            z-index: 0;
+
+            .bg-blur-form {
+                background: rgba( 255, 255, 255, .2);
+                backdrop-filter: blur(2px);
+                border-radius: 0  1rem 1rem 0;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                width: 100%;  
+                z-index: -1;
+            }
+
+            .logo-dv {
+                background: transparent;
+                border-radius: 1rem;
+                font-family: 'Raleway', sans-serif;
+                font-size: 1.8rem;
+                font-weight: bold;
+                padding: .3rem .3rem 0 .3rem;
+                text-shadow: -2px 2px rgba(0, 0, 0, .2);
+                z-index: 1;
+            }
+        }
+    } 
+    
+}
+
+@media (max-width: 750px) {
+    #root {
+        background-size: cover;
+    }
+
+    .container-dad {
+        grid-template-columns: 1fr;
+
+        .container-dad__image-sign {
+            display: none;
+        }
+
+        #container-dad__form {
+            border-radius: 1rem;
+        }
+    }
+
+}
+
